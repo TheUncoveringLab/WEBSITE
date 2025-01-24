@@ -81,6 +81,12 @@
                     contentDiv.innerHTML = `<h2>Error</h2><p>${error.message}</p>`;
                 });
         }
+
+         // Automatically load the home page on first visit
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPage('home');
+        });
+        
     </script>
 </body>
 </html>
