@@ -10,7 +10,7 @@
       margin: 20px;
     }
 
-    /* Top profiles side by side */
+    /* Top profiles */
     .profiles {
       display: flex;
       justify-content: center;
@@ -29,7 +29,7 @@
       text-decoration: underline;
     }
 
-    /* Member sections */
+    /* Sections */
     .members-section {
       margin-top: 40px;
     }
@@ -40,13 +40,28 @@
       padding-bottom: 5px;
     }
 
+    /* Member list styling */
     .members-list {
       list-style: none;
       padding-left: 0;
     }
 
-    .members-list li {
-      margin: 5px 0;
+    .member {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .member img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .member span {
+      font-size: 1em;
     }
   </style>
 </head>
@@ -61,8 +76,14 @@
   <div class="members-section">
     <h2>Current Students</h2>
     <ul class="members-list">
-      <li>Student A</li>
-      <li>Student B</li>
+      <li class="member">
+        <img src="studentA.jpg" alt="Student A">
+        <span>Student A</span>
+      </li>
+      <li class="member">
+        <img src="studentB.jpg" alt="Student B">
+        <span>Student B</span>
+      </li>
     </ul>
   </div>
 
@@ -70,8 +91,14 @@
   <div class="members-section">
     <h2>Visiting Students</h2>
     <ul class="members-list">
-      <li>Visiting Student X</li>
-      <li>Visiting Student Y</li>
+      <li class="member">
+        <img src="visitorX.jpg" alt="Visiting Student X">
+        <span>Visiting Student X</span>
+      </li>
+      <li class="member">
+        <img src="visitorY.jpg" alt="Visiting Student Y">
+        <span>Visiting Student Y</span>
+      </li>
     </ul>
   </div>
 
@@ -79,8 +106,14 @@
   <div class="members-section">
     <h2>Past Members</h2>
     <ul class="members-list">
-      <li>Alumni 1</li>
-      <li>Alumni 2</li>
+      <li class="member">
+        <img src="alumni1.jpg" alt="Alumni 1">
+        <span>Alumni 1</span>
+      </li>
+      <li class="member">
+        <img src="alumni2.jpg" alt="Alumni 2">
+        <span>Alumni 2</span>
+      </li>
     </ul>
   </div>
 </body>
